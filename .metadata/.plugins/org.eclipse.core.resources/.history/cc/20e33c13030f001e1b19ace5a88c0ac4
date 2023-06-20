@@ -1,0 +1,27 @@
+package br.com.senaisp.bauru.entradaDeDados;
+
+import javax.swing.JOptionPane;
+
+public class Exercicio01 {
+
+	public static void main(String[] args) {
+		final String TITULO = "Jogo do Milhão";
+		String questao01 = (String) JOptionPane.showInputDialog(
+				null,
+				"Digite seu nome", 
+				TITULO,
+				JOptionPane.QUESTION_MESSAGE,
+				null,
+				null,
+				"Digite seu nome aqui");
+		String questa02 = (String) JOptionPane.showInputDialog(
+				null,
+				"Digite seu e-mail", 
+				TITULO,
+				JOptionPane.QUESTION_MESSAGE,
+				null,
+				null,
+				"Digite seu e-mail aqui");
+	}
+
+}
