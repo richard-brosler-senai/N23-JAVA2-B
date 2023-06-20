@@ -1,0 +1,12 @@
+
+public class TesteValores {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int valor = 2_147_483_647;
+		System.out.println(valor);
+		valor+=2;
+		System.out.println((long)valor);
+	}
+
+}

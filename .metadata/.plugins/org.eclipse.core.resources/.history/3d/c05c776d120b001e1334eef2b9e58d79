@@ -1,0 +1,13 @@
+public class Chickens01 {
+    public static void main(String[] args) {
+        //Put yout code here
+        int eggsPerChicken = 5, chickenCount = 3, totalEggs;
+        //eggsPerChicken = ovos por galinha
+        //chickenCount = quantidade de galinhas
+        //totalEggs = total de ovos
+        //primeiro dia
+        totalEggs = eggsPerChicken * chickenCount;
+        
+        System.out.println(totalEggs);
+    }   
+}
