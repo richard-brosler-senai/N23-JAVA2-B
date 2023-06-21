@@ -30,7 +30,10 @@ public class Exercicio01 {
 				null,
 				null,
 				"Digite sua idade aqui");
+		
 		int idade = Integer.parseInt(questao03);
+		
+		
 		int questao04 = JOptionPane.showConfirmDialog(
 				null,
 				"Sua idade é "+ idade + "? Tem certeza disso?", 
@@ -57,7 +60,11 @@ public class Exercicio01 {
 				null,
 				"Digite o valor em reais");
 		double valorGasto = Double.parseDouble(questao06);
-		
+		switch (questao06) {
+		case "A" -> { System.out.println("Foi A "); }
+		case "B" -> System.out.println("Foi B ");
+		case "C" -> System.out.println("Foi C ");
+		}
 		
 	}
 
