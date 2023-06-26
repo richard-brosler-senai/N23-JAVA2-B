@@ -1,9 +1,0 @@
-package br.com.senaisp.bauru.entradaDeDados;
-
-public class Input01 {
-
-	public static void main(String[] args) {
-
-	}
-
-}
