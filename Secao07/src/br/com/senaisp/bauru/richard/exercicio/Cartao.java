@@ -27,4 +27,12 @@ public class Cartao {
 	public int getNumCartao() {
 		return numCartao;
 	}
+	
+	@Override
+	public String toString() {
+		return   "Número do Cartão: " + numCartao+
+			   "\nSaldo Cartão....: " + saldo + 
+			   "\nSaldo Tickets...: " + ticket + 
+			   "\n" + "-".repeat(10);
+	}
 }
