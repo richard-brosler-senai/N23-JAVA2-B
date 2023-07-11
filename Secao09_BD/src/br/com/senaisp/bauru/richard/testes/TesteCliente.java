@@ -13,9 +13,11 @@ public class TesteCliente {
 			conn.conectar();
 			//Cliente cli = Cliente.criar(conn, "Maria", "Rua", 5000.50);
 			Cliente cli = new Cliente(conn);
-			if (cli.buscarRegistro(5)) {
+			if (cli.buscarRegistro(4)) {
 				System.out.println(cli.toString());
-				//cli.apagar();
+				//cli.setNome("Maria Alterado!");
+				//cli.gravar();
+				cli.apagar();
 			} else {
 				System.out.println("Registro não encontrado!");
 			}
