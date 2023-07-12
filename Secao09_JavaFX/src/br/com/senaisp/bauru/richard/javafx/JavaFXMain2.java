@@ -7,6 +7,7 @@ import javafx.scene.control.Button;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.HBox;
+import javafx.scene.layout.Priority;
 import javafx.scene.paint.Color;
 import javafx.scene.paint.Paint;
 import javafx.scene.shape.Rectangle;
@@ -39,12 +40,21 @@ public class JavaFXMain2 extends Application {
 		Button btn1 = new Button("Diga 'Olá Mundo'");
 		Button btn2 = new Button("222");
 		Button btn3 = new Button("33333");
+		//colocando os botões para se ajustarem ocupando todo o espaço
+		//
+		btn1.setMaxWidth(800);
+		btn2.setMaxWidth(800);
+		btn3.setMaxWidth(800);
+		
+		HBox.setHgrow(btn1, Priority.ALWAYS);
+		HBox.setHgrow(btn2, Priority.ALWAYS);
+		HBox.setHgrow(btn3, Priority.ALWAYS);
 		//Adicionando os botões ao HBox
 		pnlBtns.getChildren().addAll(btn1,btn2,btn3);
 		
 		//posicionando o painel dos botões
 		pnlBtns.setLayoutY(450);
-		
+		pnlBtns.setPrefWidth(800);
 		//Adicionando outros itens para o nó root
 		Rectangle ret = new Rectangle(250, 250, Color.AQUA);
 		ret.setStroke(Color.ORANGE);
@@ -71,9 +81,15 @@ public class JavaFXMain2 extends Application {
 		txt.setLayoutY(350);
 		//Adicionando um ImageView
 		
-		Image img = new Image("C:\\Users\\sn1069942\\Downloads\\duke.png");
+		Image img = new Image("C:\\Users\\sn1069942\\Downloads\\Duke2.png");
 		ImageView imgVw = new ImageView(img);
-		
+		imgVw.setFitHeight(150);
+		imgVw.setFitWidth(150);
+		//para deixar proporcional usamos o aspect ratio
+		imgVw.setPreserveRatio(true);
+		//posicionando na tela
+		imgVw.setX(550);
+		imgVw.setY(100);
 		
 		//adicionando o HBox ao nó root
 		root.getChildren().addAll(pnlBtns,ret,txt,imgVw);
